@@ -2,7 +2,7 @@ CC=g++
 CFLAGS=-Wall -g
 DEPS=pso.h
 
-SOURCE_FILES=$(shell find -name '*.c')
+SOURCE_FILES=$(shell find . -name '*.c')
 OBJ_FILES=$(SOURCE_FILES:.c=.o) 
 LIB=-lm 
 
