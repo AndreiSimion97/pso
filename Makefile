@@ -10,9 +10,9 @@ LIB=-lm
 	$(CC) -c -o $@ $< $(CFLAGS)
 	
 demopso: $(OBJ_FILES)
-	gcc $^ -o $@ $(LIB)
+	$(CC) $^ -o $@ $(LIB)
 
 
 .PHONY: clean
 clean:
-	rm -f prog $(OBJ_FILES)
+	rm -f demopso $(OBJ_FILES)
